@@ -40,8 +40,8 @@ Here is a complete Python script that converts an MTProto proxy to SOCKS5:
 3. If SOCKS5 authentication is required, you'll need to add the relevant code.
 
 ### 🔴 Attention
-```
-1. Limitations:
+
+- 1. Limitations:
 The MTProto protocol is specifically designed for Telegram communications. Therefore, if software such as web browsers or other general-purpose network applications connect to this SOCKS5 proxy, they will not be able to establish a successful connection. This is because only Telegram-related traffic is recognized and handled by MTProto. Unlike protocols such as Shadowsocks or VPNs, which can tunnel all system network traffic, this solution is limited solely to Telegram traffic.
-2. Practical Use:
+- 2. Practical Use:
 This script essentially serves as an intermediary between a Telegram client and an MTProto proxy. It allows clients such as Telegram Desktop to connect to a local SOCKS5 proxy, which in turn forwards the Telegram traffic through an MTProto proxy. This method is particularly useful for enabling access to Telegram in networks where direct connections may be restricted.
